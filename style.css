@@ -1,0 +1,203 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container{
+  display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/*------------LEFT-CONTAINER-------------*/
+.left{
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.329);
+  margin-top: 30px;
+  border-top-right-radius: 12px;
+  padding: 72px 60px ;
+}
+
+.leftHeading{
+   margin-bottom: 1rem;
+}
+
+.listTitle{
+    margin-top: 3.5rem;
+}
+
+.listTitle li{
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: .5rem;
+
+}
+
+/* -------------RIGHT-CONTAINER---------- */
+.right{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8.5rem;
+}
+
+.rightHeading{
+  font-size: 24px;
+  letter-spacing: -.2px;
+}
+
+.rightPara{
+  margin: 1rem 0px;
+  font-size: 18px;
+}
+
+
+.btn{
+  background-color: black;
+  color: white;
+}
+
+/* ------------MODEL-WINDOW---------- */
+
+.modelWindow{
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.formBtn{
+  display: flex;
+  justify-content: flex-end;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  margin-bottom: .3rem;
+
+}
+
+input{
+  height: 40px;
+  margin-bottom: 1rem;
+  outline: none;
+  padding-left: 2px;
+  font-size: 1rem;
+}
+
+textarea{
+  height: 80px;
+  resize: none;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.hidden{
+    display: none;
+}
+
+/* --------------Saved-Note--------------- */
+
+.savedNoteContainer{
+  margin-top: 100px;
+  margin-left: 40px;
+  width: 750px;
+}
+
+.savedNoteData{
+  border-bottom: 1px solid;
+  width: 600px;
+}
+
+.savedNoteContainer header{
+     display: flex;
+     gap: 48px;
+     justify-content: space-between;
+}
+
+.savedNoteDate{
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+
+.savedNoteDes{
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.dltBtn{
+  cursor: pointer;
+}
+
+.taskContainer h3{
+  padding: 16px 0 16px 0;
+}
+
+.taskContainer input{
+  height: 30px;
+  width: 250px;
+  background-color: rgba(156, 156, 156, 0.267);
+  border: none;
+  margin-right: 8px;
+  padding-left: 3px;
+}
+
+.addTaskBtn{
+  border: none;
+}
+
+.taskBox{
+  background: rgba(128, 128, 128, 0.171);
+  padding: 30px 15px;
+  border-radius: 12px;
+}
+
+.task-list{
+  list-style: none;
+  margin-bottom: 14px;
+ 
+}
+
+
+.individual-task-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.individual-task-box button{
+  height: 0;
+  background-color: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.individual-title-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.individual-title-box button{
+  background:none;
+  border: none;
+  height: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.individual-title-box li{
+  cursor: pointer;
+}

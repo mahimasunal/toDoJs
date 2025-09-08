@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteTaking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+         <div class="left">
+            <h2 class="leftHeading">YOUR PROJECTS</h2>
+            <Button class=" addProjectBtn">add Project</Button>
+
+            <div class="listTitle">
+               
+            </div>
+            
+        </div>
+
+         <div class='right'>
+            <h3 class ='rightHeading'>No Project Selected</h3>
+            <p class ='rightPara'>Select a project or get started with a new one </p>
+            <Button class="addProjectBtn">create new project</Button>
+           
+        </div>
+
+         <div class='modelWindow hidden'>
+            <div class="formBtn">
+                <Button class="cancelBtn">Cancel</Button>
+                <Button class="saveBtn">Save</Button>
+            </div>
+            <form action="#">
+               <label For="title">TITLE</label>
+               <input type="text" name="title" id="title" />
+
+               <label For="des">DESCRIPTION</label>
+               <textarea name="des" id="des"></textarea>
+
+               <label For="date">DUE DATE</label>
+               <input type="date" name="date" id="date" />
+            </form>
+        </div>
+
+        <div class="savedNoteContainer hidden">
+            <header>
+                <div class="savedNoteData">
+                    <h2 class="savedNoteTitle"></h2>
+                    <p class="savedNoteDate"></p>
+                    <p class="savedNoteDes"></p>
+                </div>
+
+                <div class="dltBtn">Delete</div>
+            </header>
+
+            <div class="taskContainer">
+                 <h3>Tasks</h3>
+                 <input type="text" class="inputTask">
+                 <button type="button" class="addTaskBtn">Add Task</button>
+
+                 <ul class="taskBox hidden">
+                    
+                 </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
